@@ -5,7 +5,7 @@ import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 def convert():
-    directory = r'C:\Users\vishn\OCR\Images'
+    directory = r'...Images'
     for filename in os.listdir(directory):  
         if filename.lower().endswith(('.png','.jpg',".jpeg",'.bmp')):
             image = cv2.imread(os.path.join(directory, filename))
